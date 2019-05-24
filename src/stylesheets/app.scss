@@ -2,6 +2,11 @@
 @import "spectre/spectre";
 @import "base/typography";
 
+// type
+h2, h3 {
+  margin-bottom: 2rem;
+}
+
 //section
 .section {
   padding: 3rem 0;
