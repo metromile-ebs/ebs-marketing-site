@@ -1,0 +1,25 @@
+@import "spectre-variable-overrides";
+@import "spectre/spectre";
+@import "base/typography";
+
+// logo
+.logo {
+  svg {
+    height: 1.5rem;
+  }
+  &-dark {
+    path {
+      fill: $dark-color;
+    }
+  }
+  &-light {
+    path {
+      fill: $light-color;
+    }
+  }
+}
+
+// navbar
+.navbar {
+  padding: 1rem;
+}

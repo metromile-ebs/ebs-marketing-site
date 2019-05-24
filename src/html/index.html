@@ -1,0 +1,49 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<header class="navbar">
+  <section class="navbar-section">
+    {{ logo("dark") }}
+  </section>
+  <section class="navbar-center">
+    <!-- centered logo or brand -->
+  </section>
+  <section class="navbar-section">
+    <a href="#" class="btn btn-link">Twitter</a>
+    <a href="#" class="btn btn-link">GitHub</a>
+  </section>
+</header>
+<div class="hero">
+    <div class="hero-body container grid-lg text-center">
+      <h1>The AI-Enabled Claims Team Has Arrived.</h1>
+      <p>The insurers of tomorrow are using AI Power Tools to…</p>
+      <div class="columns">
+        <div class="column col-4">
+          <img src="" alt="image goes here">
+          <p>
+            Cut Loss Adjustment Costs
+          </p>
+        </div>
+        <div class="column col-4">
+          <img src="" alt="image goes here">
+          <p>
+            Guard Against Fraudulent Claims
+          </p>
+        </div>
+        <div class="column col-4">
+          <img src="" alt="image goes here">
+          <p>
+            Increase Customer Loyalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
