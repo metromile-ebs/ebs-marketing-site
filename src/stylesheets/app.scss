@@ -32,20 +32,6 @@ h2, h3 {
   }
 }
 
-// navbar
-.navbar {
-  padding: 1rem;
-}
-
-// hero
-.hero {
-  padding: 5rem 0;
-  .btn-primary {
-    height: auto;
-    padding: 1rem 1.5rem;
-  }
-}
-
 // bg conditionals
 .bg-primary {
   .btn-primary {
@@ -58,5 +44,22 @@ h2, h3 {
   a {
     color: white;
     text-decoration: underline;
+  }
+}
+
+// hero
+.hero {
+  padding: 5rem 0;
+  .btn-primary {
+    height: auto;
+    padding: 1rem 1.5rem;
+  }
+}
+
+// navbar
+.navbar {
+  padding: 1rem;
+  a {
+    text-decoration: none;
   }
 }
