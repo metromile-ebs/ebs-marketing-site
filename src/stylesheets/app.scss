@@ -17,6 +17,9 @@ h2, h3 {
   svg {
     height: 1.5rem;
   }
+  path {
+    fill: $primary-color;
+  }
   &-dark {
     path {
       fill: $dark-color;
@@ -37,4 +40,23 @@ h2, h3 {
 // hero
 .hero {
   padding: 5rem 0;
+  .btn-primary {
+    height: auto;
+    padding: 1rem 1.5rem;
+  }
+}
+
+// bg conditionals
+.bg-primary {
+  .btn-primary {
+    @include button-variant($color: #fe5d5d)
+  }
+  .btn.btn-link {
+    background: transparent;
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+  }
 }
