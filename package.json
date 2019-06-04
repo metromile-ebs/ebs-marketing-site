@@ -6,6 +6,7 @@
   "author": "jake <jcbflmng@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "blendid": "^4.5.0"
+    "blendid": "^4.5.0",
+    "jquery": "^3.4.1"
   }
 }
