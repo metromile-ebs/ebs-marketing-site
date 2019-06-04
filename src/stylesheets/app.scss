@@ -59,14 +59,10 @@ h2, h3 {
   overflow: hidden;
   z-index: -100;
 
-  &__option {
+  &__bg-option,
+  &__ol-option {
     display: none;
   }
-
-  &.show-option-1 { .option-1 { display: block; } }
-  &.show-option-2 { .option-2 { display: block; } }
-  &.show-option-3 { .option-3 { display: block; } }
-  &.show-option-4 { .option-4 { display: block; } }
 
   &__video {
     background: #22262F;
@@ -103,17 +99,35 @@ h2, h3 {
   }
 
   // Background video overlay
-  &:before {
-    content: '';
-    display: block;
+  &__ol-option {
+    pointer-events: none;
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
-    mix-blend-mode: color;
-    background: $primary-color;
+    z-index: 1;
+
+    &.ol-option-1 {
+      mix-blend-mode: color;
+      background: $primary-color;
+    }
+
+    &.ol-option-2 {
+      mix-blend-mode: color;
+      background: red;
+    }
+
+    &.ol-option-3 {
+      mix-blend-mode: color;
+      background: green;
+    }
+
+    &.ol-option-4 {
+      mix-blend-mode: color;
+      background: blue;
+    }
   }
 
   &__content {
@@ -127,6 +141,7 @@ h2, h3 {
 
   &--above {
     position: relative;
+    z-index: 2;
   }
 
   &--below {
