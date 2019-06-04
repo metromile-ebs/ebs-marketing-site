@@ -59,6 +59,19 @@ h2, h3 {
   overflow: hidden;
   z-index: -100;
 
+  h1 {
+    font-family: 'SF Pro Display', Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+  }
+
+  &__icon {
+    font-size: 3rerm;
+    color: white;
+  }
+
   &__bg-option,
   &__ol-option {
     display: none;
@@ -110,7 +123,7 @@ h2, h3 {
     z-index: 1;
 
     &.ol-option-1 {
-      mix-blend-mode: color;
+      mix-blend-mode: multiply;
       background: $primary-color;
     }
 
@@ -132,7 +145,7 @@ h2, h3 {
 
   &__content {
     color: white;
-    padding: 5rem 0;
+    padding: 3rem 0;
     .btn-primary {
       height: auto;
       padding: 1rem 1.5rem;
