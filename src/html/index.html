@@ -1,27 +1,46 @@
-{#
-  Nunjucks Templating!
-  Homepage: https://mozilla.github.io/nunjucks/
-  Docs: https://mozilla.github.io/nunjucks/api.html
-#}
-
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-<header class="hero-bg">
-  <video loop muted autoplay poster="https://" class="hero-bg__video hero-bg--below">
-    <source src="city.mp4" type="video/webm">
-    <source src="city.mp4" type="video/mp4">
-    <source src="city.mp4" type="video/ogg">
+<header class="hero show-option-4">
+
+  <!-- Background video option -->
+  <video loop muted autoplay poster="http://www.fillmurray.com/1920/1080" class="hero__video hero--below hero__option option-1">
+    <source src="option1.mp4" type="video/webm">
+    <source src="option1.mp4" type="video/mp4">
+    <source src="option1.mp4" type="video/ogg">
   </video>
-  <header class="hero-bg--above navbar">
+
+  <!-- Background video option -->
+  <video loop muted autoplay poster="http://www.fillmurray.com/1920/1080" class="hero__video hero--below hero__option option-2">
+    <source src="option2.mp4" type="video/webm">
+    <source src="option2.mp4" type="video/mp4">
+    <source src="option2.mp4" type="video/ogg">
+  </video>
+
+  <!-- Background video option -->
+  <video loop muted autoplay poster="http://www.fillmurray.com/1920/1080" class="hero__video hero--below hero__option option-3">
+    <source src="option3.mp4" type="video/webm">
+    <source src="option3.mp4" type="video/mp4">
+    <source src="option3.mp4" type="video/ogg">
+  </video>
+
+  <!-- Background video option -->
+  <video loop muted autoplay poster="http://www.fillmurray.com/1920/1080" class="hero__video hero--below hero__option option-4">
+    <source src="option4.mp4" type="video/webm">
+    <source src="option4.mp4" type="video/mp4">
+    <source src="option4.mp4" type="video/ogg">
+  </video>
+
+  <nav class="hero--above navbar hero__navbar">
     <section class="navbar-section">
       {{ logo("light") }}
     </section>
     <section class="navbar-section">
       <a href="#" class="btn btn-link">Schedule A Demo</a>
     </section>
-  </header>
-  <section class="hero hero-bg--above">
+  </nav>
+
+  <section class="hero--above hero__content">
     <div class="hero-body container grid-lg text-center">
       <h1>The AI-Enabled Claims Team Has Arrived.</h1>
       <p>The insurers of tomorrow are using AI Power Tools to…</p>
@@ -45,11 +64,20 @@
           </p>
         </div>
       </div>
-      <button class="btn btn-primary btn-lg mb-2">Explore The Platform</button>
+      <a href="#" class="btn btn-primary btn-lg mb-2">Explore The Platform</a>
       <p><small>or <a href="">watch our latest talk at the 2019 Connected Claims Conference</a></small></p>
     </div>
   </section>
 </header>
+
+<!-- FOR DEV PURPOSES -->
+<section class="section bg-dark text-center">
+  <button class="btn active" class="option-1">1</button>
+  <button class="btn" class="option-2">2</button>
+  <button class="btn" class="option-3">3</button>
+  <button class="btn" class="option-4">4</button>
+</section>
+
 <section class="section bg-dark">
   <div class="container grid-lg">
     <div class="columns">

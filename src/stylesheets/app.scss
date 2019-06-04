@@ -2,6 +2,10 @@
 @import "spectre/spectre";
 @import "base/typography";
 
+html {
+  min-width: 320px;
+}
+
 // type
 h2, h3 {
   margin-bottom: 2rem;
@@ -48,16 +52,57 @@ h2, h3 {
 }
 
 // hero
-.hero {
-  color: white;
-  padding: 5rem 0;
-  .btn-primary {
-    height: auto;
-    padding: 1rem 1.5rem;
-  }
-}
 
-.hero-bg {
+.hero {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: -100;
+
+  &__option {
+    display: none;
+  }
+
+  &.show-option-1 { .option-1 { display: block; } }
+  &.show-option-2 { .option-2 { display: block; } }
+  &.show-option-3 { .option-3 { display: block; } }
+  &.show-option-4 { .option-4 { display: block; } }
+
+  &__video {
+    background: #22262F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    // When aspect ratio is wider
+    @media (min-aspect-ratio: 16/9) {
+      height: 300%;
+      top: -100%;
+    }
+
+    // When aspect ratio is narrower
+    @media (max-aspect-ratio: 16/9) {
+      height: 300%;
+      top: -100%;
+    }
+
+    @media (max-aspect-ratio: 11/9) {
+      width: 600%;
+      left: -200%;
+    }
+
+    @media (max-aspect-ratio: 5/9) {
+      width: 600%;
+      left: -200%;
+    }
+
+  }
+
+  // Background video overlay
   &:before {
     content: '';
     display: block;
@@ -71,40 +116,21 @@ h2, h3 {
     background: $primary-color;
   }
 
-  position: relative;
-  overflow: hidden;
-  z-index: -100;
-  &__video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  &__content {
+    color: white;
+    padding: 5rem 0;
+    .btn-primary {
+      height: auto;
+      padding: 1rem 1.5rem;
+    }
+  }  
 
   &--above {
     position: relative;
-    z-index: 100;
   }
 
   &--below {
-    z-index: 1;
-  }
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .hero-bg__video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .hero-bg__video {
-    width: 300%;
-    left: -100%;
+    z-index: 0;
   }
 }
 
