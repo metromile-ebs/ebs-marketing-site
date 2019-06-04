@@ -7,42 +7,49 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-<header class="navbar bg-primary">
-  <section class="navbar-section">
-    {{ logo("light") }}
-  </section>
-  <section class="navbar-section">
-    <a href="#" class="btn btn-link">Schedule A Demo</a>
+<header class="hero-bg">
+  <video loop muted autoplay poster="https://" class="hero-bg__video hero-bg--below">
+    <source src="city.mp4" type="video/webm">
+    <source src="city.mp4" type="video/mp4">
+    <source src="city.mp4" type="video/ogg">
+  </video>
+  <header class="hero-bg--above navbar">
+    <section class="navbar-section">
+      {{ logo("light") }}
+    </section>
+    <section class="navbar-section">
+      <a href="#" class="btn btn-link">Schedule A Demo</a>
+    </section>
+  </header>
+  <section class="hero hero-bg--above">
+    <div class="hero-body container grid-lg text-center">
+      <h1>The AI-Enabled Claims Team Has Arrived.</h1>
+      <p>The insurers of tomorrow are using AI Power Tools to…</p>
+      <div class="columns mb-2">
+        <div class="column col-4 col-sm-12">
+          <img src="" alt="image goes here">
+          <p>
+            Cut Loss Adjustment Costs
+          </p>
+        </div>
+        <div class="column col-4 col-sm-12">
+          <img src="" alt="image goes here">
+          <p>
+            Guard Against Fraudulent Claims
+          </p>
+        </div>
+        <div class="column col-4 col-sm-12">
+          <img src="" alt="image goes here">
+          <p>
+            Increase Customer Loyalty
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg mb-2">Explore The Platform</button>
+      <p><small>or <a href="">watch our latest talk at the 2019 Connected Claims Conference</a></small></p>
+    </div>
   </section>
 </header>
-<section class="hero bg-primary">
-  <div class="hero-body container grid-lg text-center">
-    <h1>The AI-Enabled Claims Team Has Arrived.</h1>
-    <p>The insurers of tomorrow are using AI Power Tools to…</p>
-    <div class="columns mb-2">
-      <div class="column col-4 col-sm-12">
-        <img src="" alt="image goes here">
-        <p>
-          Cut Loss Adjustment Costs
-        </p>
-      </div>
-      <div class="column col-4 col-sm-12">
-        <img src="" alt="image goes here">
-        <p>
-          Guard Against Fraudulent Claims
-        </p>
-      </div>
-      <div class="column col-4 col-sm-12">
-        <img src="" alt="image goes here">
-        <p>
-          Increase Customer Loyalty
-        </p>
-      </div>
-    </div>
-    <button class="btn btn-primary btn-lg mb-2">Explore The Platform</button>
-    <p><small>or <a href="">watch our latest talk at the 2019 Connected Claims Conference</a></small></p>
-  </div>
-</section>
 <section class="section bg-dark">
   <div class="container grid-lg">
     <div class="columns">
