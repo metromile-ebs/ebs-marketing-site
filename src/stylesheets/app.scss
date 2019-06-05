@@ -2,8 +2,23 @@
 @import "spectre/spectre";
 @import "base/typography";
 
+$mmblue: #0DC0C9;
+
+/* Base: Neutrals */
+$color-neutral-1: #ffffff;
+$color-neutral-2: #fafcfc;
+$color-neutral-3: #e9eff0;
+$color-neutral-4: #c7d1d5;
+$color-neutral-5: #9ca9b1;
+$color-neutral-6: #717e89;
+$color-neutral-7: #4e5864;
+$color-neutral-8: #363d49;
+$color-neutral-9: #282e38;
+$color-neutral-10: #222630;
+
 html {
   min-width: 320px;
+  background-color: $color-neutral-9;
 }
 
 // type
@@ -124,6 +139,17 @@ h2, h3 {
 
   }
 
+  .dampener {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(135deg, rgba(34,196,207,.9) 20%,rgba(34,196,207,0.65) 100%);
+  }
+
   // Background video overlay
   &__ol-option {
     pointer-events: none;
@@ -134,25 +160,25 @@ h2, h3 {
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: 1.0;
 
     &.ol-option-1 {
-      background: linear-gradient(135deg, rgba(34,196,207,1) 0%,rgba(34,196,207,0.75) 100%);
-      opacity: 1;
+      mix-blend-mode: hard-light;
+      background: linear-gradient(135deg, #22c4cf 0%, rgba(15, 1, 234, 0.9) 100%);
     }
 
     &.ol-option-2 {
-      mix-blend-mode: color;
-      background: red;
+      background: linear-gradient(135deg, rgba(34,196,207,1) 0%,rgba(34,196,207,0.75) 100%);
     }
 
     &.ol-option-3 {
-      mix-blend-mode: color;
-      background: green;
+      mix-blend-mode: hue;
+      background: linear-gradient(135deg, rgba(34,196,207,1) 0%,rgba(34,196,207,0.75) 100%);
     }
 
     &.ol-option-4 {
-      mix-blend-mode: color;
-      background: blue;
+      mix-blend-mode: lighten;
+      background: linear-gradient(135deg, rgba(34,196,207,1) 0%,rgba(34,196,207,0.75) 100%);
     }
   }
 
