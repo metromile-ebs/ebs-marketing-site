@@ -2,11 +2,22 @@
 @import "spectre/spectre";
 @import "base/typography";
 
+@font-face {
+  font-family: 'Obviously Bold';
+  src:  url('./fonts/Obviously v0.6/WOFF2/Obviously-Bold.woff2') format('woff2'),
+        url('./fonts/Obviously v0.6/WOFF/Obviously-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+$font-stack-header: 'Obviously', Helvetica, sans-serif;
+$font-stack-body: 'SF Pro Display', Helvetica, sans-serif;
+
 $mmblue: #0DC0C9;
 
 /* Base: Neutrals */
 $color-neutral-1: #ffffff;
-$color-neutral-2: #fafcfc;
+$color-neutral-2: hsl(180, 25%, 98%);
 $color-neutral-3: #e9eff0;
 $color-neutral-4: #c7d1d5;
 $color-neutral-5: #9ca9b1;
@@ -86,7 +97,7 @@ h2, h3 {
     box-shadow: 0 6px 24px transparentize($dark-color,.8);
   }
   h1 {
-    font-family: 'SF Pro Display', Helvetica, sans-serif;
+    font-family: $font-stack-header;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
