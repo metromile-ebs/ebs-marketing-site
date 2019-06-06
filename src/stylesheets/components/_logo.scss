@@ -1,0 +1,18 @@
+.logo {
+  svg {
+    height: 1.5rem;
+  }
+  path {
+    fill: $primary-color;
+  }
+  &-dark {
+    path {
+      fill: $dark-color;
+    }
+  }
+  &-light {
+    path {
+      fill: $light-color;
+    }
+  }
+}

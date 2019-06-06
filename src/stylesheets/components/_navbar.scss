@@ -1,0 +1,9 @@
+.navbar {
+  padding: 1rem;
+  a {
+    text-decoration: none;
+  }
+  .btn.btn-link {
+    @include button-variant($color: transparent);
+  }
+}
