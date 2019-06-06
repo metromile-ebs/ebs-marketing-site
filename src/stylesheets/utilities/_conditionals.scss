@@ -1,0 +1,20 @@
+// bg conditionals
+.bg-primary {
+  .btn-primary {
+    @include button-variant($color: #F46C4D)
+  }
+  .btn.btn-link {
+    background: transparent;
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.bg-dark {
+  h6 {
+    color: $color-neutral-5;
+  }
+}

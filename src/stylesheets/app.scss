@@ -4,32 +4,21 @@
 @import "base/fonts";
 @import "base/defaults";
 @import "base/typography";
-@import "base/spacing";
 
-@import "components/navbar";
 @import "components/section";
 @import "components/logo";
+@import "components/buttons";
+@import "components/navbar";
 @import "components/hero";
 
+@import "utilities/spacing";
+@import "utilities/conditionals";
 
-// bg conditionals
-.bg-primary {
-  .btn-primary {
-    @include button-variant($color: #F46C4D)
-  }
-  .btn.btn-link {
-    background: transparent;
-    color: white;
-  }
-  a {
-    color: white;
-    text-decoration: underline;
-  }
+.bg-dark {
+  background: linear-gradient(135deg,  rgba(41,46,55,1) 0%,rgba(0,5,15,1) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.btn.btn-primary {
-  @include button-variant($color: #FE6F67)
-}
+
 
 .diagonal-flair {
   position: relative;
@@ -45,12 +34,12 @@
     height: 120%;
     top: 20%;
     transform: skewY(-4deg);
-    background: $color-neutral-2;
+    background: $color-neutral-3;
     mix-blend-mode: multiply;
   }
   &-1:before {
     transform: skewY(-4deg);
-    background: $color-neutral-2;
+    background: $color-neutral-3;
   }
   &-2:before {
     transform: skewY(-8deg);

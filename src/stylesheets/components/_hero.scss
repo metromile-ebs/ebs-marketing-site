@@ -5,14 +5,20 @@
   .btn.btn-primary {
     border-radius: 1000px;
     @include button-variant($color: #FE6F67);
+    border-color: #FE574E;
+    font-size: $font-size-sm;
     box-shadow: 0 6px 24px transparentize($dark-color,.8);
+    padding: 1.75rem 2.5rem;
+    font-weight: 500;
   }
   h1 {
     font-family: $font-stack-header;
-    font-size: 2rem;
+    font-size: 56px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 800;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: $unit-3;
   }
 
   &__icon {
@@ -122,8 +128,8 @@
     z-index: 0;
   }
 
-  a {
+  a:not(.btn) {
     color: white;
-    //text-decoration: underline;
+    text-decoration: underline;
   }
 }

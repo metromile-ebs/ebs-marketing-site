@@ -3,7 +3,30 @@
   a {
     text-decoration: none;
   }
-  .btn.btn-link {
-    @include button-variant($color: transparent);
+  .btn {
+    background: transparent;
+    border-color: white;
+    color: white;
+    &:focus {
+      @include control-shadow(white);
+    }
+    &:focus,
+    &:hover {
+      background: rgba(255,255,255,.1);
+      border-color: darken(white, 2%);
+      color: white;
+    }
+    &:active,
+    &.active {
+      background: transparent;
+      border-color: rgba(255,255,255,.5);
+      color: $light-color;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: white;
+        border-left-color: white;
+      }
+    }
   }
 }

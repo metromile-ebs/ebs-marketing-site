@@ -54,35 +54,35 @@ $body-font-family: $base-font-family, $fallback-font-family;
 // Unit sizes
 $unit-o: .05rem;
 $unit-h: .1rem;
-$unit-1: .2rem;
-$unit-2: .4rem;
-$unit-3: .6rem;
-$unit-4: .8rem;
-$unit-5: 1rem;
-$unit-6: 1.2rem;
-$unit-7: 1.4rem;
-$unit-8: 1.6rem;
-$unit-9: 1.8rem;
-$unit-10: 2rem;
-$unit-12: 2.4rem;
-$unit-16: 3.2rem;
+$unit-1: 1rem;
+$unit-2: 2rem;
+$unit-3: 3rem;
+$unit-4: 4rem;
+$unit-5: 5rem;
+$unit-6: 6rem;
+$unit-7: 7rem;
+$unit-8: 8rem;
+$unit-9: 9rem;
+$unit-10: 10rem;
+$unit-12: 11rem;
+$unit-16: 12rem;
 
 // Font sizes
-$html-font-size: 20px;
+$html-font-size: 16px;
 $html-line-height: 1.5;
-$font-size: .8rem;
-$font-size-sm: .7rem;
-$font-size-lg: .9rem;
+$font-size: 1rem;
+$font-size-sm: .875rem;
+$font-size-lg: 1.25rem;
 $line-height: 1.2rem;
 
 // Sizes
 $layout-spacing: $unit-2;
 $layout-spacing-sm: $unit-1;
 $layout-spacing-lg: $unit-4;
-$border-radius: $unit-h;
+$border-radius: 1000px;
 $border-width: $unit-o;
 $border-width-lg: $unit-h;
-$control-size: $unit-9;
+$control-size: $unit-3;
 $control-size-sm: $unit-7;
 $control-size-lg: $unit-10;
 $control-padding-x: $unit-2;
