@@ -7,18 +7,18 @@
 
 @import "components/section";
 @import "components/logo";
+@import "components/icons";
 @import "components/buttons";
 @import "components/navbar";
 @import "components/hero";
 
 @import "utilities/spacing";
+@import "utilities/media";
 @import "utilities/conditionals";
 
 .bg-dark {
   background: linear-gradient(135deg,  rgba(41,46,55,1) 0%,rgba(0,5,15,1) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-
-
 
 .diagonal-flair {
   position: relative;
@@ -37,13 +37,13 @@
     background: $color-neutral-3;
     mix-blend-mode: multiply;
   }
-  &-1:before {
+  &-1:after {
     transform: skewY(-4deg);
     background: $color-neutral-3;
   }
-  &-2:before {
+  &-2:after {
     transform: skewY(-8deg);
-    background: $color-neutral-3;
+    background: rgba(34, 196, 207, 1);
   }
 }
 
