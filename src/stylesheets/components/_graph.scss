@@ -1,0 +1,40 @@
+.graph {
+  position: relative;
+  float: left;
+
+  &__label {
+    text-align: center;
+    position: absolute;
+    line-height: 1em;
+    width: 100%;
+  }
+
+  svg {
+    transform: rotate(-90deg);
+  }
+
+  .circle_animation {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+
+  &--expenses .circle_animation {
+    animation: expenses 1s ease-in-out forwards;
+  }
+
+  &--satisfaction .circle_animation {
+    animation: graph-satisfaction 1s ease-in-out forwards;
+  }
+}
+
+@keyframes expenses {
+  to {
+    stroke-dashoffset: 80;
+  }
+}
+
+@keyframes graph-satisfaction {
+  to {
+    stroke-dashoffset: 160;
+  }
+}
