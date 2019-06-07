@@ -1,6 +1,8 @@
 .graph {
   position: relative;
-  float: left;
+  // float: left;
+  display: flex;
+  justify-content: center;
 
   &__label {
     text-align: center;
@@ -8,6 +10,14 @@
     line-height: 1em;
     width: 100%;
     top: 40%;
+  }
+
+  &__numbers {
+    text-align: center;
+    position: absolute;
+    line-height: 1em;
+    width: 100%;
+    top: 50%;
   }
 
   svg {
@@ -32,12 +42,12 @@
 
 @keyframes expenses {
   to {
-    stroke-dashoffset: 80;
+    stroke-dashoffset: 300;
   }
 }
 
 @keyframes satisfaction {
   to {
-    stroke-dashoffset: 160;
+    stroke-dashoffset: 340;
   }
 }
