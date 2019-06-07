@@ -1,4 +1,10 @@
 .icon {
+
+  &--small {
+    position: relative;
+    top: 0.2em;
+  }
+
   &__spacer {
     &--right {
       margin-right: $unit-1 / 2;

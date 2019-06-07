@@ -2,6 +2,10 @@
   color: rgba(0,0,0,0.6);
 }
 
+.text-white {
+  color: #fff;
+}
+
 body {
   font-family: $font-stack-body;
   font-weight: 300;
@@ -75,13 +79,9 @@ p {
 }
 
 b {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 small {
   font-size: $font-size-sm;
-}
-
-p {
-  margin-bottom: 1rem;
 }
