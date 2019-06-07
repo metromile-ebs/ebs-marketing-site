@@ -6,6 +6,7 @@
 @import "base/typography";
 
 @import "components/section";
+@import "components/layout";
 @import "components/logo";
 @import "components/icons";
 @import "components/buttons";
@@ -14,9 +15,11 @@
 @import "components/hero";
 @import "components/graph";
 
+@import "utilities/color";
 @import "utilities/spacing";
 @import "utilities/media";
 @import "utilities/conditionals";
+@import "utilities/visibility";
 
 .bg-dark {
   background: linear-gradient(135deg,  rgba(41,46,55,1) 0%,rgba(0,5,15,1) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -47,10 +50,6 @@
     transform: skewY(-8deg);
     background: rgba(34, 196, 207, 1);
   }
-}
-
-.container {
-  position: relative;
 }
 
 .highlight {
