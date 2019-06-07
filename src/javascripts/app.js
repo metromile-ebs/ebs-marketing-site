@@ -2,7 +2,7 @@ import './modules'
 
 // 
 
-$('.bg-option-1, .ol-option-1').show();
+$('.bg-option-2, .ol-option-1').show();
 
 $('.bg-switcher').click(function() {
   const classToShow = $(this).data('switcher');
