@@ -25,3 +25,41 @@ $('.ol-switcher').click(function() {
   $('.hero__ol-option').hide();
   toShow.show();
 });
+
+// Optimized scroll listener
+( function() {
+  var latestKnownScrollY = 0;
+  var triggerEl = document.getElementById("graph__scroll-trigger");
+  var distanceFromBottom = 100;
+  var ticking = false;
+
+  function onScroll() {
+    latestKnownScrollY = window.scrollY;
+    requestTick();
+  }
+
+  function requestTick() {
+    if( !ticking ) {
+      requestAnimationFrame(update);
+    }
+    ticking = true;
+  }
+
+  function update() {
+    var viewportOffset = triggerEl.getBoundingClientRect();
+    var triggerY = Math.floor(viewportOffset.top - window.innerHeight + distanceFromBottom);
+    console.log(triggerY);
+    ticking = false;
+    var currentScrollY = latestKnownScrollY;
+    var screenBottom = currentScrollY + window.innerHeight;
+
+    if( triggerY < 0 ) {
+      triggerEl.classList.add('animate');
+      document.removeEventListener('scroll', onScroll);
+    }
+
+  }
+
+  document.addEventListener('scroll', onScroll, false);
+
+} )();
