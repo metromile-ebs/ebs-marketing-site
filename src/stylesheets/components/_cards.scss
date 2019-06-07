@@ -1,10 +1,31 @@
 .card {
   background: white;
-  padding: 4rem;
   box-shadow: 0 6px 24px transparentize($dark-color, .9);
-  border-radius: 10px;
+  border-radius: $unit-1;
   border: 0;
+  display: flex;
+  margin-bottom: $unit-4;
+
   + .card {
-    margin-top: 2rem;
+    margin-top: $unit-2;
+  }
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
+  &__header {
+    background-color: $color-neutral-3;
+    border-radius: $unit-1 0 0 $unit-1;
+    width: 40%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__body {
+    width: 60%;
+    padding: $unit-4;
   }
 }
