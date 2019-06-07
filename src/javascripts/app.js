@@ -25,3 +25,39 @@ $('.ol-switcher').click(function() {
   $('.hero__ol-option').hide();
   toShow.show();
 });
+
+// Optimized scroll listener
+( function() {
+  var latestKnownScrollY = 0;
+  var triggerEl = document.getElementById("graph__scroll-trigger");
+  var viewportOffset = triggerEl.getBoundingClientRect();
+  var triggerY = viewportOffset.top + window.innerHeight;
+  var ticking = false;
+
+  function onScroll() {
+    latestKnownScrollY = window.scrollY;
+    requestTick();
+  }
+
+  function requestTick() {
+    if( !ticking ) {
+      requestAnimationFrame(update);
+    }
+    ticking = true;
+  }
+
+  function update() {
+    console.log(triggerY);
+    ticking = false;
+    var currentScrollY = latestKnownScrollY;
+    var screenBottom = currentScrollY + window.innerHeight;
+
+    if(screenBottom >= triggerY) {
+      // console.log('waaaaaaaa');
+    }
+
+  }
+
+  document.addEventListener('scroll', onScroll, false);
+
+} )();
