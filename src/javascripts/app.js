@@ -30,8 +30,7 @@ $('.ol-switcher').click(function() {
 ( function() {
   var latestKnownScrollY = 0;
   var triggerEl = document.getElementById("graph__scroll-trigger");
-  var viewportOffset = triggerEl.getBoundingClientRect();
-  var triggerY = viewportOffset.top + window.innerHeight;
+  var distanceFromBottom = 100;
   var ticking = false;
 
   function onScroll() {
@@ -47,13 +46,16 @@ $('.ol-switcher').click(function() {
   }
 
   function update() {
+    var viewportOffset = triggerEl.getBoundingClientRect();
+    var triggerY = Math.floor(viewportOffset.top - window.innerHeight + distanceFromBottom);
     console.log(triggerY);
     ticking = false;
     var currentScrollY = latestKnownScrollY;
     var screenBottom = currentScrollY + window.innerHeight;
 
-    if(screenBottom >= triggerY) {
-      // console.log('waaaaaaaa');
+    if( triggerY < 0 ) {
+      triggerEl.classList.add('animate');
+      document.removeEventListener('scroll', onScroll);
     }
 
   }

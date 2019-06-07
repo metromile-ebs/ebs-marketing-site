@@ -18,13 +18,15 @@
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
   }
+}
 
-  &--expenses .circle_animation {
-    animation: expenses 1s ease-in-out forwards;
+#graph__scroll-trigger.animate {
+  .graph--expenses .circle_animation {
+    animation: expenses 2s ease-in-out forwards;
   }
 
-  &--satisfaction .circle_animation {
-    animation: graph-satisfaction 1s ease-in-out forwards;
+  .graph--satisfaction .circle_animation {
+    animation: satisfaction 2s ease-in-out forwards;
   }
 }
 
@@ -34,7 +36,7 @@
   }
 }
 
-@keyframes graph-satisfaction {
+@keyframes satisfaction {
   to {
     stroke-dashoffset: 160;
   }
