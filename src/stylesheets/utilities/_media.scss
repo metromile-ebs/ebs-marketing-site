@@ -1,6 +1,14 @@
 .media {
   &--video {
-    margin-bottom: $unit-1;
+    //margin-bottom: $unit-1;
     max-width: 100%;
   }
+}
+
+.figure .figure-caption {
+  margin-top: $unit-1;
+  color: $color-neutral-5;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-family: $font-stack-header;
 }
