@@ -1,9 +1,9 @@
 body {
-  font-family: 'Gooper';
+  font-family: $font-stack-body;
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   font-family: $font-stack-header;
   font-feature-settings: "salt";
   text-transform: uppercase;
@@ -24,11 +24,17 @@ h2 {
   font-weight: 500;
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 h5 {
+  font-family: $font-stack-body;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  opacity: 0.5;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 h6 {
