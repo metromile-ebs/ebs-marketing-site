@@ -1,27 +1,27 @@
-//Obviously
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Thin.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Thin.woff') format('woff');
-//   font-weight: 200;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Light.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Light.woff') format('woff');
-//   font-weight: 300;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Regular.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Regular.woff') format('woff');
-//   font-weight: 400;
-//   font-style: normal;
-// }
+// Obviously
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Thin.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Light.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Regular.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Obviously';
@@ -31,13 +31,13 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Semibold.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Semibold.woff') format('woff');
-//   font-weight: 600;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Semibold.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Obviously';
@@ -47,46 +47,46 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Black.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Black.woff') format('woff');
-//   font-weight: 800;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Super.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Super.woff') format('woff');
-//   font-weight: 900;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Black.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
 
-//Obviously Italic
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Thin_Italic.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Thin_Italic.woff') format('woff');
-//   font-weight: 200;
-//   font-style: italic;
-// }
-//
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Light_Italic.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Light_Italic.woff') format('woff');
-//   font-weight: 300;
-//   font-style: italic;
-// }
-//
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Regular_Italic.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Regular_Italic.woff') format('woff');
-//   font-weight: 400;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Super.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Super.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Obviously Italic
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Thin_Italic.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Thin_Italic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Light_Italic.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Light_Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Regular_Italic.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Regular_Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'Obviously';
@@ -96,13 +96,13 @@
   font-style: italic;
 }
 
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Semibold_Italic.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Semibold_Italic.woff') format('woff');
-//   font-weight: 600;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Semibold_Italic.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Semibold_Italic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'Obviously';
@@ -112,30 +112,30 @@
   font-style: italic;
 }
 
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Black_Italic.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Black_Italic.woff') format('woff');
-//   font-weight: 800;
-//   font-style: italic;
-// }
-//
-// @font-face {
-//   font-family: 'Obviously';
-//   src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Super_Italic.woff2') format('woff2'),
-//         url('../fonts/Obviously-v06/WOFF/Obviously-Super_Italic.woff') format('woff');
-//   font-weight: 900;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Black_Italic.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Black_Italic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
 
-//Gooper
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-Thin.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-Thin.woff') format('woff');
-//   font-weight: 200;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Obviously';
+  src:  url('../fonts/Obviously-v06/WOFF2/Obviously-Super_Italic.woff2') format('woff2'),
+        url('../fonts/Obviously-v06/WOFF/Obviously-Super_Italic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+// Gooper
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-Thin.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Gooper';
@@ -161,46 +161,46 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-SemiBold.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-SemiBold.woff') format('woff');
-//   font-weight: 600;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-Bold.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-Bold.woff') format('woff');
-//   font-weight: 700;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-Black.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-Black.woff') format('woff');
-//   font-weight: 800;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-Super.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-Super.woff') format('woff');
-//   font-weight: 900;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-SemiBold.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
 
-//Gooper Italic
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-ThinItalic.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-ThinItalic.woff') format('woff');
-//   font-weight: 200;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-Bold.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-Black.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-Black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-Super.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-Super.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Gooper Italic
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-ThinItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'Gooper';
@@ -218,13 +218,13 @@
   font-style: italic;
 }
 
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-MediumItalic.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-MediumItalic.woff') format('woff');
-//   font-weight: 500;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'Gooper';
@@ -234,26 +234,26 @@
   font-style: italic;
 }
 
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-BoldItalic.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-BoldItalic.woff') format('woff');
-//   font-weight: 700;
-//   font-style: italic;
-// }
-//
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-BlackItalic.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-BlackItalic.woff') format('woff');
-//   font-weight: 800;
-//   font-style: italic;
-// }
-//
-// @font-face {
-//   font-family: 'Gooper';
-//   src:  url('../fonts/Gooper-v03/Gooper0.3-SuperItalic.woff2') format('woff2'),
-//         url('../fonts/Gooper-v03/Gooper0.3-SuperItalic.woff') format('woff');
-//   font-weight: 900;
-//   font-style: italic;
-// }
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-BlackItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper-v03/Gooper0.3-SuperItalic.woff2') format('woff2'),
+        url('../fonts/Gooper-v03/Gooper0.3-SuperItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
