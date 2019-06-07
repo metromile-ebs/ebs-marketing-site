@@ -3,15 +3,32 @@ body {
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h6 {
-  font-family: 'Obviously';
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack-header;
   font-feature-settings: "salt";
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
+h1 {
+  font-size: 56px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
 h5 {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5;
 }
 
 h6 {

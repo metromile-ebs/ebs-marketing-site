@@ -48,7 +48,6 @@ $('.ol-switcher').click(function() {
   function update() {
     var viewportOffset = triggerEl.getBoundingClientRect();
     var triggerY = Math.floor(viewportOffset.top - window.innerHeight + distanceFromBottom);
-    console.log(triggerY);
     ticking = false;
     var currentScrollY = latestKnownScrollY;
     var screenBottom = currentScrollY + window.innerHeight;
