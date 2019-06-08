@@ -16,6 +16,7 @@ $(function() {
   });
 });
 
+
 // Stop video after a few loops for performance reasons
 $(document).ready(function() {
   var videoLength = 12;
@@ -27,28 +28,6 @@ $(document).ready(function() {
       vid.pause();
     }
   });
-})
-
-$('.bg-switcher').click(function() {
-  const classToShow = $(this).data('switcher');
-  const toShow = $( '.'+classToShow );
-
-  $('.bg-switcher').removeClass('active');
-  $(this).addClass('active');
-  
-  $('.hero__bg-option').hide();
-  toShow.show();
-});
-
-$('.ol-switcher').click(function() {
-  const classToShow = $(this).data('switcher');
-  const toShow = $( '.'+classToShow );
-
-  $('.ol-switcher').removeClass('active');
-  $(this).addClass('active');
-  
-  $('.hero__ol-option').hide();
-  toShow.show();
 });
 
 // Optimized scroll listener
@@ -81,7 +60,6 @@ $('.ol-switcher').click(function() {
       triggerEl.classList.add('animate');
       document.removeEventListener('scroll', onScroll);
     }
-
   }
 
   document.addEventListener('scroll', onScroll, false);
