@@ -16,7 +16,8 @@ module.exports = {
     },
     provide: {
       $: "jquery",
-      jQuery: "jquery"
+      jQuery: "jquery",
+      bgVideo: "jquery-background-video"
     }
   },
 

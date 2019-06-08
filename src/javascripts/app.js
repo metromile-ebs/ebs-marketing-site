@@ -1,4 +1,4 @@
-import './modules'
+import './modules';
 
 // Smooth scroll
 $(function() {
@@ -16,7 +16,18 @@ $(function() {
   });
 });
 
-$('.bg-option-2, .ol-option-1').show();
+// Stop video after a few loops for performance reasons
+$(document).ready(function() {
+  var videoLength = 12;
+  var loopsBeforePausing = 5;
+  var vid = document.getElementById("hero__video");
+
+  vid.addEventListener("timeupdate", function(){
+    if(this.currentTime >= (videoLength * loopsBeforePausing)) {
+      vid.pause();
+    }
+  });
+})
 
 $('.bg-switcher').click(function() {
   const classToShow = $(this).data('switcher');
