@@ -1,0 +1,15 @@
+.z {
+  &--high {
+    position: relative;
+    z-index: 2;
+  }
+
+  &--medium {
+    position: relative;
+    z-index: 1;
+  }
+
+  &--low {
+    z-index: 0;
+  }
+}

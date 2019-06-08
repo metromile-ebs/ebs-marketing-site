@@ -10,14 +10,14 @@
     playsinline
     poster="bg-ld.jpg"
     id="hero__video"
-    class="hero__video hero--below"
+    class="hero__video z--low"
   >
     <source src="bg-ld.webm" type="video/webm" />
     <source src="bg-ld.mp4" type="video/mp4" />
     <source src="bg-ld.ogv" type="video/ogg" />
   </video>
 
-  <nav class="hero--above navbar hero__navbar">
+  <nav class="z--high navbar hero__navbar">
     <section class="navbar-section">
       {{ logo("light") }}
     </section>
@@ -26,7 +26,7 @@
     </section>
   </nav>
 
-  <section class="hero--above hero__content">
+  <section class="z--high hero__content">
     <div class="hero-body container grid-xl text-center">
       <div class="columns mb-3">
         <h1 class="column col-9 col-xs-12 col-mx-auto">
@@ -544,8 +544,9 @@
 
 <!-- CTA -->
 <section class="section bg-primary overflow-hidden p-relative">
+  <div class="hero__ol"></div>
   <div class="ava-logo-bg"><img src="images/ava-logo-giant.svg" /></div>
-  <div class="container grid-md">
+  <div class="container grid-md z--high">
     <h3 class="text-center">
       Leapfrog the competition by empowering your team with the AI-powered tools
       of tomorrow.

@@ -21,6 +21,7 @@
 @import "utilities/media";
 @import "utilities/conditionals";
 @import "utilities/visibility";
+@import "utilities/z-index";
 
 .bg-dark {
   background: linear-gradient(135deg,  rgba(41,46,55,1) 0%,rgba(0,5,15,1) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
