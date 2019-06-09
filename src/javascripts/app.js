@@ -34,7 +34,7 @@ $(document).ready(function() {
 ( function() {
   var latestKnownScrollY = 0;
   var triggerEl = document.getElementById("graph__scroll-trigger");
-  var distanceFromBottom = 100;
+  var distanceFromBottom = 10;
   var ticking = false;
 
   function onScroll() {

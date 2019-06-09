@@ -72,7 +72,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background: linear-gradient(135deg, rgba(34,196,207,.9) 20%,rgba(34,196,207,0.65) 100%);
+    background: linear-gradient(150deg, rgba(34,196,207,.9) 20%,rgba(34,196,207,0.65) 100%);
   }
 
   &__ol {
@@ -85,7 +85,7 @@
     z-index: 1;
     opacity: 1.0;
     mix-blend-mode: hard-light;
-    background: linear-gradient(135deg, #22c4cf 0%, rgba(15, 1, 234, 0.9) 100%);
+    background: linear-gradient(150deg, #22c4cf 0%, rgba(15, 1, 234, 0.9) 100%);
   }
 
   &__content {
