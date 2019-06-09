@@ -152,7 +152,8 @@
 }
 
 .donut-percent {
-  font-size: 0.3em;
+  font-family: $font-stack-numbers;
+  font-size: 0.6em;
   line-height: 1;
   transform: translateY(0.5em);
   font-weight: 200;
