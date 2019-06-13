@@ -1,0 +1,53 @@
+<header class="hero">
+  <div class="hero__dampener"></div>
+  <div class="hero__ol"></div>
+
+  <video
+    loop
+    muted
+    autoplay
+    playsinline
+    poster="bg-ld.jpg"
+    id="hero__video"
+    class="hero__video z--low"
+  >
+    <source src="bg-ld.webm" type="video/webm" />
+    <source src="bg-ld.mp4" type="video/mp4" />
+    <source src="bg-ld.ogv" type="video/ogg" />
+  </video>
+
+  <nav class="z--high navbar hero__navbar">
+    <section class="navbar-section">
+      {{ logo("light") }}
+    </section>
+    <section class="navbar-section">
+      {{ scheduler("button") }}
+    </section>
+  </nav>
+
+  <section class="z--high hero__content">
+    <div class="hero-body container grid-xl text-center">
+      <div class="columns mb-3">
+        <h1 class="column col-9 col-xs-12 col-mx-auto">
+          Your AI-Powered Claims Organization of the Future is Here.
+        </h1>
+        <h5 class="column col-6 col-xs-12 col-mx-auto">
+          Metromile built the leading US pay-per-mile insurance company by
+          creating an AI-powered claims intelligence platform on top of
+          traditional claims management software.
+          <br />
+          <br />
+          <b>
+            Now, we’re licensing that platform to you.
+          </b>
+        </h5>
+      </div>
+      <a href="#platform-features" class="btn btn-primary btn-lg mb-2"
+        >Explore The Platform</a
+      >
+      <p>
+        <small>Or, {{ scheduler() }}</small>
+      </p>
+    </div>
+  </section>
+</header>
