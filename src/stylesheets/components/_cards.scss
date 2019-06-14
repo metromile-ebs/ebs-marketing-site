@@ -6,10 +6,6 @@
   display: flex;
   margin-bottom: $unit-4;
 
-  + .card {
-    margin-top: $unit-2;
-  }
-
   &--horizontal {
     flex-direction: row;
   }
@@ -26,11 +22,15 @@
 
   &__body {
     width: 60%;
-    padding: $unit-4;
+    padding: $unit-3;
 
     &--full {
       width: 100%;
       padding: $unit-4;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 }
