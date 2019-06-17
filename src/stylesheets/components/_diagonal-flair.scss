@@ -1,0 +1,29 @@
+.diagonal-flair {
+  position: relative;
+  overflow: hidden;
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -23%;
+    transform: skewY(-4deg);
+    background: $color-neutral-3;
+    mix-blend-mode: multiply;
+  }
+  &-1:after {
+    transform: skewY(8deg);
+    height: 110%;
+    top: -45%;
+    background: $color-neutral-3;
+  }
+  &-2:after {
+    transform: skewY(-8deg);
+    height: 107%;
+    background: rgba(34, 196, 207, 1);
+  }
+}
