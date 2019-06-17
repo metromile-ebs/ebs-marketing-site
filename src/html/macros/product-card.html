@@ -13,9 +13,9 @@
     <div class="card__header" style="background-image: url('{{ bgUrl }}');"></div>
     <div class="card__body">
 
-      <h3 class="mb-1">{{ title }}</h3>
-      <h5 class="mb-2 text-gray">{{ subtitle }}</h5>
-      <p>{{ body }}</p>
+      <h3 class="mb-1">{{ title|safe }}</h3>
+      <h5 class="mb-2 text-gray">{{ subtitle|safe }}</h5>
+      <p>{{ body|safe }}</p>
       {% if learnMore %}
       <p>
         <a href="{{ learnMoreUrl }}">Learn more.</a>
