@@ -24,6 +24,25 @@ h1 {
   font-weight: 700;
   font-style: italic;
   line-height: 1;
+
+  @media (max-width: $size-xl) {
+    font-size: $font-size-xxl;
+  }
+
+  @media (max-width: $size-lg) {
+    font-size: $font-size-xxxl;
+    font-family: $font-stack-header-narrow;
+  }
+
+  @media (max-width: $size-sm) {
+    font-size: $font-size-xxl;
+    font-family: $font-stack-header-narrow;
+  }
+
+  @media (max-width: $size-xs) {
+    font-size: $font-size-xl;
+    font-family: $font-stack-header-narrow;
+  }
 }
 
 h2 {
