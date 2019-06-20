@@ -5,20 +5,14 @@
   </div>
   <div class="container grid-md z--high">
     <h3 class="text-center">
-      Leapfrog the competition by empowering your team with the AI-powered tools
+      Leapfrog the competition. Empower your team with the AI-powered Claims Intelligence
       of tomorrow.
     </h3>
+    {% if ctaType == "whitepaper" %}
     <div class="form-group text-center">
-      <label class="form-label" for="email"
-        >Download our Gradual AI Transformation whitepaper today.</label
-      >
+      <label class="form-label" for="email">Download our Gradual AI Transformation whitepaper today.</label>
       <div class="input-group">
-        <input
-          class="form-input"
-          type="email"
-          placeholder="Email address"
-          name="email"
-        />
+        <input class="form-input" type="email" placeholder="Email address" name="email" />
         <button class="btn btn-primary input-group-btn">
           Email Me A Copy
         </button>
@@ -28,4 +22,9 @@
       <small>Or, {{ scheduler() }}</small>
     </p>
   </div>
+  {% elseif ctaType == "demo" %}
+  <div class="mt-4 mb-1 text-center">
+    {{ scheduler("button-large") }}
+  </div>
+  {% endif %}
 </section>

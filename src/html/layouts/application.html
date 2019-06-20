@@ -1,17 +1,28 @@
-{% from 'macros/logo.html' import logo %} {% from 'macros/scheduler.html' import
-scheduler %} {% from 'macros/product-card.html' import productCard %}
+{% from 'macros/logo.html' import logo %}
+{% from 'macros/scheduler.html' import scheduler %}
+{% from 'macros/product-card.html' import productCard %}
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>{% block title %}{{ title }}{% endblock %}</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% include "shared/app-icons.html" %} {% include "shared/head.html" %}
-  </head>
-  <body>
-    {% block content %}{% endblock %} {% block javascript %}
-    <script src="javascripts/app.js"></script>
-    {% endblock %} {% include "shared/footer.html" %}
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}{{ title }}{% endblock %}</title>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% include "shared/app-icons.html" %}
+  {% include "shared/head.html" %}
+</head>
+
+<body>
+  {# ctaTypes[demo, whitepaper]. Switch to "whitepaper" once we have one available for download. #}
+  {% set ctaType = "demo" %}
+
+  {% block content %}{% endblock %}
+
+  {% include "shared/footer.html" %}
+  {% block javascript %}
+  <script src="javascripts/app.js"></script>
+  {% endblock %}
+</body>
+
 </html>

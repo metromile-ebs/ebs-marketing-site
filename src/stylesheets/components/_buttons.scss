@@ -4,15 +4,20 @@
   font-size: $font-size-sm;
   font-weight: 500;
   font-feature-settings: "salt";
+  text-decoration: none;
 }
 
 .btn.btn-primary {
   @include button-variant($color: #FE6F67);
   font-weight: 500;
+  border-radius: 1000px;
+  border-color: #FE574E;
 }
 
 .btn.btn-lg {
   font-size: $font-size-sm;
-  height: 2rem;
-  padding: 0.35rem 0.6rem;
+  padding: 1.75rem 2.5rem;
+  font-weight: 500;
+  border-radius: 1000px;
+  height: auto;
 }

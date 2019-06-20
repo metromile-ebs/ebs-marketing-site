@@ -1,13 +1,14 @@
 // bg conditionals
 .bg-primary {
   .btn-primary {
-    @include button-variant($color: #F46C4D)
+    @include button-variant($color: #F46C4D);
+    box-shadow: 0 6px 24px transparentize($dark-color,.8);
   }
   .btn.btn-link {
     background: transparent;
     color: white;
   }
-  a {
+  a:not(.btn) {
     color: white;
     text-decoration: underline;
   }

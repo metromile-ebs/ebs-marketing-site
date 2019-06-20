@@ -2,15 +2,7 @@
   <div class="hero__dampener"></div>
   <div class="hero__ol"></div>
 
-  <video
-    loop
-    muted
-    autoplay
-    playsinline
-    poster="bg-ld.jpg"
-    id="hero__video"
-    class="hero__video z--low"
-  >
+  <video loop muted autoplay playsinline poster="bg-ld.jpg" id="hero__video" class="hero__video z--low">
     <source src="bg-ld.webm" type="video/webm" />
     <source src="bg-ld.mp4" type="video/mp4" />
     <source src="bg-ld.ogv" type="video/ogg" />
@@ -21,7 +13,9 @@
       {{ logo("light") }}
     </section>
     <section class="navbar-section">
+      {% if ctaType == "whitepaper" %}
       {{ scheduler("button") }}
+      {% endif %}
     </section>
   </nav>
 
@@ -42,12 +36,16 @@
           </b>
         </h5>
       </div>
-      <a href="#platform-features" class="btn btn-primary btn-lg mb-2"
-        >Explore The Platform</a
-      >
+      {% if ctaType == "whitepaper" %}
+      <a href="#platform-features" class="btn btn-primary btn-lg mb-2">
+        Explore The Platform
+      </a>
       <p>
-        <small>Or, {{ scheduler() }}</small>
+        <small>Or,&nbsp;{{ scheduler() }}</small>
       </p>
+      {% elseif ctaType == "demo" %}
+      {{ scheduler("button-large") }}
+      {% endif %}
     </div>
   </section>
 </header>
