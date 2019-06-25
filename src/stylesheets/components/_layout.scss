@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .grid-xxl {
   max-width: calc(100% - 4rem);
 }

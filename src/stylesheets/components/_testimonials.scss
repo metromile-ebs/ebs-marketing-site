@@ -1,0 +1,18 @@
+.testimonial {
+  &-cite {
+
+    &--left {
+      margin-bottom: $unit-3;
+      @media (min-width: $size-md) {
+        margin-bottom: 0;
+      }
+    }
+
+    &--right {
+      text-align: center;
+      @media (min-width: $size-md) {
+        text-align: right;
+      }
+    }
+  }
+}
