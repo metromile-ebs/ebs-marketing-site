@@ -60,6 +60,10 @@
   font-size: 16px;
   margin: 0 auto;
   animation: donutfade 1s;
+
+  @media (min-width: 992px) {
+    width: 72%;
+  }
 }
 
 @keyframes donutfade {
@@ -69,12 +73,6 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@media (min-width: 992px) {
-  .svg-item {
-    width: 80%;
   }
 }
 
