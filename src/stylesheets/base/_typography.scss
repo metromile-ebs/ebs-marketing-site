@@ -13,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h6 {
   font-family: $font-stack-header;
-  font-feature-settings: "salt";
+  // font-feature-settings: "salt"; // uncomment for open counter alternates
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -49,6 +49,7 @@ h2 {
   font-size: $font-size-xl;
   line-height: 40px;
   font-weight: 500;
+  font-style: normal;
 
   @media (max-width: $size-xl) {
     font-size: $font-size-xxl;
