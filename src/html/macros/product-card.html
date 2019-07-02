@@ -9,11 +9,11 @@
 
 <div class="column col-xl-12 col-6">
 
-  <div class="card row-vertical-sm row-horizontal-xl row-vertical">
+  <div class="card product-card row-vertical-sm row-horizontal-xl row-vertical">
     <div class="card__header" style="background-image: url('{{ bgUrl }}');"></div>
-    <div class="card__body">
+    <div class="card__body product-card-body">
 
-      <h3 class="mb-1">{{ title|safe }}</h3>
+      <h3 class="mb-1 product-card-title">{{ title|safe }}</h3>
       <h5 class="mb-2 text-gray">{{ subtitle|safe }}</h5>
       <p>{{ body|safe }}</p>
       {% if learnMore %}

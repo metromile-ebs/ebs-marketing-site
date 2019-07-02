@@ -11,7 +11,7 @@
   }
 
   &__header {
-    background-color: $color-neutral-3;
+    //background-color: $color-neutral-3;
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,5 +41,16 @@
     p:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.product-card {
+  &-body {
+    padding: 1rem 3rem 3rem 3rem;
+  }
+  &-title {
+    font-family: $font-stack-header-narrow;
+    font-size: 3rem;
+    text-align: center;
   }
 }
