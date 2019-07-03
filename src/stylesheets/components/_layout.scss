@@ -10,6 +10,14 @@
   max-width: calc(100% - 4rem);
 }
 
+.grid-dense {
+  .column {
+    padding-left: $unit-1;
+    padding-right: $unit-1;
+  }
+}
+
+
 @media (min-width: $size-xl) {
   .container.xl-grid-xl {
     max-width: 1344px;
