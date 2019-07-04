@@ -8,10 +8,10 @@
 }
 
 .btn.btn-primary {
-  @include button-variant($color: #FE6F67);
+  @include button-variant($color: $color-brand-contrast);
   font-weight: 500;
   border-radius: 1000px;
-  border-color: #FE574E;
+  border-color: $color-brand-contrast-dark-1;
 }
 
 .btn.btn-lg {

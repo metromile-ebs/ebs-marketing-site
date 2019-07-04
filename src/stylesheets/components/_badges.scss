@@ -1,0 +1,23 @@
+/* Using .tiny-rectangle instead of .badge because spectre has some insane
+   selectors on .badge that required jumping through dumb hoops to override. */
+.tiny-rectangle {
+  display: inline-block;
+  margin-left: 1rem;
+  &--warning {
+    &:after {
+      content: attr(data-badge);
+      font-size: $font-size-xs;
+      font-family: $font-stack-header;
+      font-weight: 400;
+      white-space: nowrap;
+      padding: 0.3em 0.5em;
+      border-radius: 0.35em;
+      position: relative;
+      top: -1px;
+      right: 0;
+      background: $color-brand-contrast;
+      border: 1px solid $color-brand-contrast-dark-1;
+      box-shadow: none;
+    }
+  }
+}
