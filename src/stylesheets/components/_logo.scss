@@ -1,6 +1,11 @@
 .logo {
+  display: block;
+  max-width: 10rem;
+  
   svg {
-    height: 2.25rem;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
   path {
     fill: $primary-color;
