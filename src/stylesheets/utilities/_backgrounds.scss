@@ -1,0 +1,10 @@
+.bg-repeater:before {
+  content: '';
+  background: url('../images/repeating-bg.png');
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
