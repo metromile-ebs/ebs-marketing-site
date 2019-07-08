@@ -35,7 +35,11 @@
 
     &--full {
       width: 100%;
-      padding: $unit-4;
+      padding: $unit-2;
+
+      @media (min-width: $size-sm) {
+        padding: $unit-4;
+      }
     }
 
     p:last-child {

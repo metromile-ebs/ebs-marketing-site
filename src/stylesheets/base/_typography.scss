@@ -108,12 +108,16 @@ q {
 
 q:before {
   content: open-quote;
-  font-size: 5em;
+  font-size: 2em;
   line-height: 0.5em;
   position: absolute;
   left: -0.5em;
   top: 0em;
   opacity: 0.25;
+
+  @media (min-width: $size-sm) {
+    font-size: 5em;
+  }
 }
 q:after {
   content: close-quote;
