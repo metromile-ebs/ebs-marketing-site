@@ -1,16 +1,16 @@
-{% macro scheduler(type) %}
+{% macro scheduler(type, class) %}
 {% set scheduleLink = "https://calendly.com/bdailey/discovery-with-metromile-enterprise" %}
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 
 {% if type == "button" %}
-<a class="btn" href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
+<a class="btn{{ ' '+class }}" href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
 {% elseif type == "button-large" %}
-<a class="btn btn-primary btn-lg mb-2" href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
+<a class="btn btn-primary btn-lg mb-2{{ ' '+class }}" href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
 {% elseif type == "link-inline" %}
-<a href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">schedule a demo</a>
+<a href="#" class="{{ ' '+class }}" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">schedule a demo</a>
 {% else %}
-<a href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>.
+<a href="#" class="{{ ' '+class }}" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>.
 {% endif %}
 {% endmacro %}

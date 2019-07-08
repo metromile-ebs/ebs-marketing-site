@@ -5,6 +5,10 @@
   font-weight: 500;
   font-feature-settings: "salt";
   text-decoration: none;
+
+  &--full {
+    width: 100%;
+  }
 }
 
 .btn.btn-primary {

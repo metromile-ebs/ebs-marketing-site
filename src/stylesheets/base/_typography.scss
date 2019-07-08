@@ -9,6 +9,8 @@
 body {
   font-family: $font-stack-body;
   font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h6 {
@@ -92,10 +94,11 @@ blockquote {
   font-family: $font-stack-body;
   font-weight: 300;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.5;
   font-style: italic;
   color: $color-neutral-6;
   border-left: none;
+  margin: 0;
 }
 
 q {
@@ -121,9 +124,10 @@ p {
 }
 
 b {
-  font-weight: 400;
+  font-weight: 500;
 }
 
-small {
+small,
+.small {
   font-size: $font-size-sm;
 }

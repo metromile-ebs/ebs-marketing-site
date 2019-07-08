@@ -3,27 +3,25 @@
     <header class="section__header mb-4">
       <h6 class="text-center text-gray">Digital Claims Transformation</h6>
       <h2 class="text-center">
-        The Claims Transformation Roadmap
+        Roadmap for a total transformation
       </h2>
     </header>
     <div class="columns">
-      <div class="column col-sm-12 col-6">
+      <div class="column col-12">
         <p>
-          <strong>Cutting edge AI and sophisticated telematics are poised to
-            transform the insurance industry.</strong>
-          Organizations must also adapt to remain competitive, however this
-          doesn’t have to be a painful process.
+          <strong>Transforming your claims department doesn't have to be a headache.</strong>
+          We know how hard organizational transformation can be, which is why we built the platform to minimize the pain.
         </p>
+      </div>
+      <div class="column col-sm-12 col-6">
         <h6>
           <img src="images/icon-ramp-up.svg" class="icon icon--small icon__spacer--right" />
           Gradual Modernization
         </h6>
         <p>
-          Cutting edge AI and sophisticated telematics are poised to transform
-          the insurance industry. Organizations must also adapt to remain
-          competitive, however this doesn’t have to be a painful process. We
-          built our Platform to mitigate difficulties that can arise from large
-          scale change management.
+          Change is always hard, especially when it's as transformative as AI.
+          To be successful, any change management strategy must allow for the
+          gradual adjustment of people and process, which is the approach we advocate.
         </p>
         <h6>
           <img src="images/icon-end-to-end.svg" class="icon icon--small icon__spacer--right" />
@@ -71,6 +69,10 @@
               <input type="button" class="btn btn-primary input-group-btn" value="Email me a copy" />
             </div>
           </div>
+        </div>
+        {% elseif ctaType == "demo" %}
+        <div class="mt-4 mb-1 text-center">
+          {{ scheduler("button-large", 'btn--full') }}
         </div>
         {% endif %}
       </div>
