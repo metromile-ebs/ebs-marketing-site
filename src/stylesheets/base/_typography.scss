@@ -9,8 +9,16 @@
 body {
   font-family: $font-stack-body;
   font-weight: 300;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+
+  @media (min-width: $size-sm) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: $size-lg) {
+    font-size: 1.125rem;
+  }
 }
 
 h1, h2, h3, h4, h6 {
@@ -93,7 +101,7 @@ h6 {
 blockquote {
   font-family: $font-stack-body;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
   font-style: italic;
   color: $color-neutral-6;

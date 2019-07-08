@@ -1,4 +1,10 @@
 html {
+  background-color: $color-neutral-10;
+  font-size: 16px;
+}
+
+html,
+body {
   min-width: 320px;
-  background-color: black;
+  overflow-x: hidden;
 }

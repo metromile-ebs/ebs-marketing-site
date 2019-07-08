@@ -1,25 +1,25 @@
 <section class="section bg-repeater bg-primary overflow-hidden p-relative">
   <div class="hero__ol"></div>
   <div class="container grid-md z--high">
-    <h2>
+    <h2 class="text-center">
       <strong><em>Ready to leapfrog the competition?</em></strong>
     </h2>
     <h5 class="text-center">
       Empower your team with the Claims AI Platform of tomorrow.
-    </h4>
-    {% if ctaType == "whitepaper" %}
-    <div class="form-group text-center">
-      <label class="form-label" for="email">Download our Gradual AI Transformation whitepaper today.</label>
-      <div class="input-group">
-        <input class="form-input" type="email" placeholder="Email address" name="email" />
-        <button class="btn btn-primary input-group-btn">
-          Email Me A Copy
-        </button>
+      </h4>
+      {% if ctaType == "whitepaper" %}
+      <div class="form-group text-center">
+        <label class="form-label" for="email">Download our Gradual AI Transformation whitepaper today.</label>
+        <div class="input-group">
+          <input class="form-input" type="email" placeholder="Email address" name="email" />
+          <button class="btn btn-primary input-group-btn">
+            Email Me A Copy
+          </button>
+        </div>
       </div>
-    </div>
-    <p class="text-center">
-      <small>Or, {{ scheduler() }}</small>
-    </p>
+      <p class="text-center">
+        <small>Or, {{ scheduler() }}</small>
+      </p>
   </div>
   {% elseif ctaType == "demo" %}
   <div class="mt-4 mb-1 text-center">
