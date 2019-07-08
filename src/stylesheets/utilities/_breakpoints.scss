@@ -1,0 +1,16 @@
+/* For little responsive tweaks on things that aren't really components */
+
+.icon-paragraph {
+  .column {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @media (min-width: $size-sm) {
+      text-align: left;
+    }
+
+    @media (min-width: $size-lg) {
+      margin-bottom: 0;
+    }
+  }
+}
