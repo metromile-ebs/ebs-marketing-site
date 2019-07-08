@@ -1,5 +1,6 @@
 .navbar {
   padding: $unit-2 $unit-2 0;
+
   a {
     text-decoration: none;
   }
@@ -27,6 +28,24 @@
         border-bottom-color: white;
         border-left-color: white;
       }
+    }
+  }
+
+  /* Spectre overrides */
+  .navbar-section {
+    flex-basis: 100%;
+    justify-content: center !important;
+
+    &:first-child {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: $size-sm) {
+      flex-basis: 0;
+      justify-content: flex-start !important;
+
+      &:first-child { margin-bottom: 0; }
+      &:last-child { justify-content: flex-end !important; }
     }
   }
 }
