@@ -49,18 +49,22 @@
   &-header {
     background-size: 512px;
   }
-  
+
   &-body {
     background: url('../images/line-bg-01.svg');
     background-position: center top;
     background-size: 512px;
     padding: 1rem 2rem 3rem;
 
+    p {
+      font-size: $font-size;
+    }
+
     @media (min-width: $size-sm) {
       padding: 1rem 3rem 3rem;
     }
   }
-  
+
   &-title {
     color: #00084E;
     font-family: $font-stack-header-narrow;
@@ -73,6 +77,13 @@
     @media (min-width: $size-sm) {
       font-family: $font-stack-header;
     }
+  }
+
+  &-subtitle {
+    font-size: $font-size-md;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
   }
 }
 

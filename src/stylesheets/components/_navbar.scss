@@ -2,7 +2,11 @@
   padding: $unit-2 $unit-2 0;
 
   a {
-    text-decoration: none;
+    font-family: $font-stack-header;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    text-decoration: none!important;
+    text-transform: uppercase;
   }
   .btn {
     background: transparent;
