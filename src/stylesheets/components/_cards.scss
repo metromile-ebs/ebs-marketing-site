@@ -42,6 +42,10 @@
 .product-card {
   margin: 0 auto $unit-2;
 
+  @media (min-width: $size-sm) {
+    max-width: 480px;
+  }
+
   &-header {
     background-size: 512px;
   }
@@ -50,21 +54,25 @@
     background: url('../images/line-bg-01.svg');
     background-position: center top;
     background-size: 512px;
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 1rem 2rem 3rem;
+
+    @media (min-width: $size-sm) {
+      padding: 1rem 3rem 3rem;
+    }
   }
   
   &-title {
     color: #00084E;
-    font-family: $font-stack-header;
+    font-family: $font-stack-header-narrow;
     font-weight: 700;
     font-style: italic;
     font-size: 2.5rem;
     margin-bottom: $unit-2;
     text-align: center;
-  }
 
-  @media (min-width: $size-sm) {
-    max-width: 480px;
+    @media (min-width: $size-sm) {
+      font-family: $font-stack-header;
+    }
   }
 }
 

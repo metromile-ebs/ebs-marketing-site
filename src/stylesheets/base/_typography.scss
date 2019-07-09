@@ -56,17 +56,18 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-xl;
-  line-height: 40px;
-  font-weight: 500;
-  font-style: normal;
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  font-style: italic;
 
   @media (max-width: $size-xl) {
     font-size: $font-size-xxl;
   }
 
   @media (max-width: $size-lg) {
-    font-size: $font-size-xxxl;
+    font-size: $font-size-xxl;
     font-family: $font-stack-header-narrow;
   }
 
