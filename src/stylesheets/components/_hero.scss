@@ -18,8 +18,8 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: -300%;
+    width: 600%;
     height: 100%;
 
     // When aspect ratio is wider
@@ -57,7 +57,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background: linear-gradient(150deg, rgba(34,196,207,.9) 20%,rgba(34,196,207,0.65) 100%);
+    background: linear-gradient(150deg, rgba(34,196,207,.9) 20%,rgba(34,196,207,0.6) 90%);
   }
 
   &__ol {

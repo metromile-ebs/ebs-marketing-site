@@ -1,6 +1,7 @@
 .footer {
   background: $color-neutral-10;
   color: $color-neutral-6;
+  font-size: 1rem;
 }
 
 .footer-logo {
@@ -11,7 +12,7 @@
   height: $unit-2;
   padding: 1.5rem;
   margin: 0 auto 1rem;
-  
+
   @media (min-width: $size-sm) {
     margin: 0 0 1rem;
   }
