@@ -1,11 +1,11 @@
 import './modules';
 
 // Smooth scroll
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+$(function () {
+  $('a[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
@@ -18,20 +18,20 @@ $(function() {
 
 
 // Stop video after a few loops for performance reasons
-$(document).ready(function() {
+$(document).ready(function () {
   var videoLength = 12;
   var loopsBeforePausing = 5;
   var vid = document.getElementById("hero__video");
 
-  vid.addEventListener("timeupdate", function(){
-    if(this.currentTime >= (videoLength * loopsBeforePausing)) {
+  vid.addEventListener("timeupdate", function () {
+    if (this.currentTime >= (videoLength * loopsBeforePausing)) {
       vid.pause();
     }
   });
 });
 
 // Optimized scroll listener
-( function() {
+(function () {
   var latestKnownScrollY = 0;
   var triggerEl = document.getElementById("graph__scroll-trigger");
   var distanceFromBottom = 10;
@@ -43,7 +43,7 @@ $(document).ready(function() {
   }
 
   function requestTick() {
-    if( !ticking ) {
+    if (!ticking) {
       requestAnimationFrame(update);
     }
     ticking = true;
@@ -56,7 +56,7 @@ $(document).ready(function() {
     var currentScrollY = latestKnownScrollY;
     var screenBottom = currentScrollY + window.innerHeight;
 
-    if( triggerY < 0 ) {
+    if (triggerY < 0) {
       triggerEl.classList.add('animate');
       document.removeEventListener('scroll', onScroll);
     }
@@ -64,4 +64,13 @@ $(document).ready(function() {
 
   document.addEventListener('scroll', onScroll, false);
 
-} )();
+})();
+
+(function () {
+  const tab = $('.tab-item > a');
+
+  tab.click(function () {
+    console.log($(this))
+  });
+
+})();

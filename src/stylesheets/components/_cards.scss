@@ -46,11 +46,11 @@
     max-width: 480px;
   }
 
-  &-header {
+  &__header {
     background-size: 512px;
   }
 
-  &-body {
+  &__body {
     background: url('../images/line-bg-01.svg');
     background-position: center top;
     background-size: 512px;
@@ -65,7 +65,7 @@
     }
   }
 
-  &-title {
+  &__title {
     color: #00084E;
     font-family: $font-stack-header-narrow;
     font-weight: 700;
@@ -79,7 +79,7 @@
     }
   }
 
-  &-subtitle {
+  &__subtitle {
     font-size: $font-size-md;
     font-weight: 600;
     line-height: 1.25;

@@ -7,14 +7,14 @@
   learnMoreUrl='#'
 ) %}
 
-<div class="column col-lg-12 col-6 d-flex">
+<div class="column col-lg-12 col-6 d-flex{{ ' product-card--'+title|safe|lower }}">
 
   <div class="card product-card row-vertical">
-    <div class="card__header product-card-header" style="background-image: url('{{ bgUrl }}');"></div>
-    <div class="card__body product-card-body">
+    <div class="card__header product-card__header" style="background-image: url('{{ bgUrl }}');"></div>
+    <div class="card__body product-card__body">
 
-      <h3 class="product-card-title">{{ title|safe }}</h3>
-      <h5 class="product-card-subtitle mb-2 text-gray">{{ subtitle|safe }}</h5>
+      <h3 class="product-card__title">{{ title|safe }}</h3>
+      <h5 class="product-card__subtitle mb-2 text-gray">{{ subtitle|safe }}</h5>
       <p>{{ body|safe }}</p>
       {% if learnMore %}
       <p>

@@ -8,3 +8,12 @@ body {
   min-width: 320px;
   overflow-x: hidden;
 }
+
+::selection {
+  background: $color-brand-light-1; /* WebKit/Blink Browsers */
+  color: rgba(255,255,255,0.7);
+}
+::-moz-selection {
+  background: $color-brand-light-1; /* Gecko Browsers */
+  color: rgba(255,255,255,0.7);
+}

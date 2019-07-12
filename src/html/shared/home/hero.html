@@ -2,8 +2,9 @@
   <div class="hero__dampener"></div>
   <div class="hero__ol"></div>
 
-  <video loop muted autoplay playsinline poster="bg-ld.jpg" id="hero__video" class="hero__video z--low">
-    <source src="bg-ld.mp4" type="video/mp4" />
+  <video loop muted autoplay playsinline poster="bg-video-poster.jpg" id="hero__video" class="hero__video z--low">
+    <source src="bg-video-md.mp4" type="video/mp4" media="all and (min-width:992px)" />
+    <source src="bg-video-sm.mp4" type="video/mp4" media="all and (max-width:992px)" />
   </video>
 
   <nav class="z--high navbar hero__navbar">
@@ -11,7 +12,8 @@
       {{ logo("light") }}
     </section>
     <section class="navbar-section">
-      <a href="https://boards.greenhouse.io/metromile" target="_blank" class="tiny-rectangle tiny-rectangle--warning" data-badge="We're Hiring!"></a>
+      <a href="https://boards.greenhouse.io/metromile" target="_blank" class="tiny-rectangle tiny-rectangle--warning"
+        data-badge="We're Hiring!"></a>
       {% if ctaType == "whitepaper" %}
       {{ scheduler("button") }}
       {% endif %}
