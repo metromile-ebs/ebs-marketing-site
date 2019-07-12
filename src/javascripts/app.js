@@ -58,11 +58,11 @@ $(document).ready(function () {
 
     if (triggerY < 0) {
       triggerEl.classList.add('animate');
-      document.removeEventListener('scroll', onScroll);
+      document.body.removeEventListener('scroll', onScroll);
     }
   }
 
-  document.addEventListener('scroll', onScroll, false);
+  document.body.addEventListener('scroll', onScroll, false);
 
 })();
 
