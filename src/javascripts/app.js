@@ -68,9 +68,36 @@ $(document).ready(function () {
 
 (function () {
   const tab = $('.tab-item > a');
+  const report = $('.product-card--report');
+  const detect = $('.product-card--detect');
+  const replay = $('.product-card--replay');
+  const streamline = $('.product-card--streamline');
+  let showCards = [];
 
   tab.click(function () {
-    console.log($(this))
-  });
+    $('.tab-item>a').removeClass('active');
+    $(this).addClass('active');
 
+    if ($(this).hasClass('tab--all')) {
+      report.show();
+      detect.show();
+      replay.show();
+      streamline.show();
+    } else if ($(this).hasClass('tab--cx')) {
+      report.show();
+      detect.hide();
+      replay.hide();
+      streamline.show();
+    } else if ($(this).hasClass('tab--fraud')) {
+      report.show();
+      detect.show();
+      replay.show();
+      streamline.hide();
+    } else if ($(this).hasClass('tab--automate')) {
+      report.show();
+      detect.show();
+      replay.hide();
+      streamline.show();
+    }
+  });
 })();
