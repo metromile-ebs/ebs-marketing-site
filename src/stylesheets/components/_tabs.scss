@@ -4,9 +4,16 @@
   .tab-item {
     a {
       @extend h6;
+      font-family: $font-stack-header-narrow;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       border-bottom-width: 4px;
       color: rgba(255,255,255,0.8);
       transition: all 0.2s ease-in-out;
+
+      @media (min-width: $size-md) {
+        font-family: $font-stack-header;
+      }
 
       &:hover,
       &.active,
