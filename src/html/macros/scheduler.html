@@ -5,12 +5,16 @@
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 
 {% if type == "button" %}
-<a class="btn{{ ' '+class }}" href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
+<a class="event--request-demo btn{{ ' '+class }}" href="#"
+  onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
 {% elseif type == "button-large" %}
-<a class="btn btn-primary btn-lg mb-2{{ ' '+class }}" href="#" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
+<a class="event--request-demo btn btn-primary btn-lg mb-2{{ ' '+class }}" href="#"
+  onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>
 {% elseif type == "link-inline" %}
-<a href="#" class="{{ ' '+class }}" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">schedule a demo</a>
+<a href="#" class="event--request-demo {{ ' '+class }}"
+  onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">schedule a demo</a>
 {% else %}
-<a href="#" class="{{ ' '+class }}" onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>.
+<a href="#" class="event--request-demo {{ ' '+class }}"
+  onclick="Calendly.initPopupWidget({url: '{{ scheduleLink }}'});return false;">Schedule a Demo</a>.
 {% endif %}
 {% endmacro %}
