@@ -1,13 +1,17 @@
 .press-wall {
+  display: flex;
+  justify-content: center;
+
   &__logo {
     opacity: 0.5;
     transition: $transition-off--slow;
-    max-width: 12rem;
-    display: inline-block;
     margin: 0 2rem;
+    display: inline-block;
 
     img {
       max-width: 100%;
+      display: block;
+      height: 2rem;
     }
 
     &:hover {
