@@ -1,0 +1,18 @@
+.press-wall {
+  &__logo {
+    opacity: 0.5;
+    transition: $transition-off--slow;
+    max-width: 12rem;
+    display: inline-block;
+    margin: 0 2rem;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:hover {
+      opacity: 1;
+      transition: $transition-on--slow;
+    }
+  }
+}
