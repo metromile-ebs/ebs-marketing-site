@@ -28,6 +28,7 @@ $(document).ready(function () {
       vid.pause();
     }
   });
+
 });
 
 // Optimized scroll listener
