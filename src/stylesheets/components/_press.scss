@@ -1,0 +1,23 @@
+.press-wall {
+  margin: 0 auto;
+  display: inline-block;
+
+  &__logo {
+    opacity: 0.5;
+    transition: $transition-off--slow;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: 2rem;
+    }
+
+    &:hover {
+      opacity: 1;
+      transition: $transition-on--slow;
+    }
+  }
+}
