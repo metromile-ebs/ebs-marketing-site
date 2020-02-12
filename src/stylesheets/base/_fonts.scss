@@ -69,24 +69,24 @@
 // Gooper
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/gooper/Gooper0.3-Light.woff2') format('woff2'),
-        url('../fonts/gooper/Gooper0.3-Light.woff') format('woff');
+  src:  url('../fonts/gooper/GooperText6-Light.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/gooper/Gooper0.3-Regular.woff2') format('woff2'),
-        url('../fonts/gooper/Gooper0.3-Regular.woff') format('woff');
+  src:  url('../fonts/gooper/GooperText6-Regular.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/gooper/Gooper0.3-Medium.woff2') format('woff2'),
-        url('../fonts/gooper/Gooper0.3-Medium.woff') format('woff');
+  src:  url('../fonts/gooper/GooperText6-Medium.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-Medium.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
@@ -94,24 +94,49 @@
 // Gooper Italic
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/gooper/Gooper0.3-LightItalic.woff2') format('woff2'),
-        url('../fonts/gooper/Gooper0.3-LightItalic.woff') format('woff');
+  src:  url('../fonts/gooper/GooperText6-LightItalic.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/gooper/Gooper0.3-RegularItalic.woff2') format('woff2'),
-        url('../fonts/gooper/Gooper0.3-RegularItalic.woff') format('woff');
+  src:  url('../fonts/gooper/GooperText6-RegularItalic.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-RegularItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/gooper/Gooper0.3-MediumItalic.woff2') format('woff2'),
-        url('../fonts/gooper/Gooper0.3-MediumItalic.woff') format('woff');
+  src:  url('../fonts/gooper/GooperText6-MediumItalic.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-MediumItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
+}
+
+// Gooper
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/gooper/GooperText6-Light.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/gooper/GooperText6-Regular.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/gooper/GooperText6-Medium.woff2') format('woff2'),
+        url('../fonts/gooper/GooperText6-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
